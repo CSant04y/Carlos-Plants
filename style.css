@@ -1,0 +1,160 @@
+/*Reset Styles - Make it look consistent across browsers*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Caprasimo', serif;
+    color: #333;
+    font-size: 2em;;
+}
+
+/*Font styules*/
+.caprasimo-regular {
+  font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Container - holds all our content */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(200,162,200,0.8)
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;;
+}
+
+/*Heading - title styling*/
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+/*Paragraph - subtitle styling*/
+p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/*Form Groups - Each input section*/
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Labels - Text Above Each input */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Fields - Text Inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s; 
+}
+
+/* input Fields - Focus state */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/*checkbox Styling - Special layout for checkboxes */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal
+}
+
+/* submit button - The send button */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+/* Button hover - When user hovers over the button */
+button[type="submit"]:hover {
+    background-color: #245325;
+}
+
+.hero-section {
+    height: 300px;
+    background: linear-gradient(60deg, #996888 0%, #C6DDF0 100%);
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    color: white;
+    text-align: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.gallery-image {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.video-section iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border-radius: .5rem;
+}
